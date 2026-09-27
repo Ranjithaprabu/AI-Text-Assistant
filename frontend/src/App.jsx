@@ -14,18 +14,21 @@ function App() {
     setAnswer("");
 
     try {
-      const response = await fetch("https://ai-text-assistant-backend-ovor.onrender.com", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          prompt: `${mode} the following text:\n\n${text}`,
-        }),
-      });
-
+      const response = await fetch(
+        "https://ai-text-assistant-backend-ovor.onrender.com/ask-ai",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            prompt: `${mode} the following text:\n\n${text}`,
+          }),
+        }
+      );
+    
       const data = await response.json();
-
+    
       setAnswer(data.answer);
     } catch (error) {
       console.error(error);
