@@ -6,7 +6,15 @@ const { GoogleGenAI } = require("@google/genai");
 
 const app = express();
 
-app.use(cors());
+app.use(
+    cors({
+      origin: "https://ai-text-assistant-liard.vercel.app",
+      methods: ["GET", "POST"],
+      allowedHeaders: ["Content-Type"],
+    })
+  );
+  
+  app.use(express.json());
 app.use(express.json());
 
 const ai = new GoogleGenAI({
