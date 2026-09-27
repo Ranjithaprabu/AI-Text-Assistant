@@ -14,7 +14,7 @@ function App() {
     setAnswer("");
 
     try {
-      const response = await fetch("https://ai-text-assistant-backend-ovor.onrender.com/", {
+      const response = await fetch("https://ai-text-assistant-backend-ovor.onrender.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
