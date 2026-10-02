@@ -10,6 +10,13 @@ AI: Google Gemini API
 Language: JavaScript
 Version Control: Git & GitHub
 
+Deployment
+
+- Frontend: Hosted on Vercel
+- Backend: Deployed on Render
+- AI Service: Google Gemini API
+
+The React frontend communicates with the Express.js backend deployed on Render, which securely handles requests to the Google Gemini API.
 
 1. Clone the Repository
 
