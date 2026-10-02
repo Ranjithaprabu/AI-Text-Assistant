@@ -1,5 +1,15 @@
 A full-stack AI application built using React.js, Express.js, Node.js, and the Google Gemini API.
+ ## Live Demo
 
+🔗 [AI Text Assistant](https://ai-text-assistant-liard.vercel.app/)
+
+## Deployment
+
+- Frontend: Hosted on Vercel
+- Backend: Deployed on Render
+- AI Service: Google Gemini API
+
+The React frontend is hosted on Vercel and communicates with the Express.js backend, which handles requests to the Google Gemini API.
 The application allows users to enter prompts through a React-based interface and receive AI-generated responses using the Gemini API.
 
 Tech Stack
@@ -10,13 +20,6 @@ AI: Google Gemini API
 Language: JavaScript
 Version Control: Git & GitHub
 
-Deployment
-
-- Frontend: Hosted on Vercel
-- Backend: Deployed on Render
-- AI Service: Google Gemini API
-
-The React frontend communicates with the Express.js backend deployed on Render, which securely handles requests to the Google Gemini API.
 
 1. Clone the Repository
 
